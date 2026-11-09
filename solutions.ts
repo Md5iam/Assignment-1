@@ -26,10 +26,10 @@ function processInput(value: string | number | boolean): string | number {
 }
 
 
-function formatCoordinate( value: readonly [number, number, string]) : string{
-  return `Location: ${value[2]} (${value[0]}, ${value[1]})`
+function formatCoordinate( pos: readonly [latitude: number, longitude: number, locationName: string]) : string{
+  const [latitude, longitude, locationName] = pos;
+  return `Location: ${locationName} (${latitude}, ${longitude})`
 }
-
 
 
 function concatenateArrays<T>(...arrays: T[][]) : T[]{
