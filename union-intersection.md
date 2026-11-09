@@ -30,6 +30,7 @@ type Student = {
 type UniversityUser = CommonData & (Faculty | Student);
 
 function accessCourse(user: UniversityUser) {
+  console.log(user.name);
   if (user.role === "faculty") {
     console.log("Upload course materials");
   } else {
