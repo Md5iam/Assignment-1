@@ -11,7 +11,7 @@ Now, both faculty and students have some common information like ID and name. So
 But here comes another problem. We need to allow the system to accept both Faculty and Student information. For this, we can use Union (|) to represent either a Faculty or a Student. By combining both, we can create one type that contains the common information and allows different roles.
 
 ### Code
-```
+```ts
 type CommonData = {
   id: number;
   name: string;

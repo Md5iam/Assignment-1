@@ -8,7 +8,7 @@ Let's understand this using an example. Lets say we are working with an API resp
 
 To solve this problem, we use Generics. They allow us to define a general type structure using a placeholder type. When working with a specific response, we can specify the actual data type we expect.
 ## Code Examples
-```
+```ts
 interface User {
   name: string;
   role: string;
